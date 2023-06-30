@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.selected-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+img {
+    max-width: 85%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2A3B49;
+    color: #7BFFE9;
+    border-radius: 60px;
+    border: solid 1px #7BFFE9;
+    padding: 5px 10px;
+}

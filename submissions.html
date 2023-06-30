@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Roboto+Serif:wght@500&family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="css/allpages.css">
+      <link rel="stylesheet" href="css/submissionspage.css">
+    <title>2023 Submissions</title>
+  </head>
+  <body>
+    <header>
+        <p class="company-logo"><a href="index.html">PIXIFY</a></p>
+        <div class="header-end">
+            <nav>
+                <ul>
+                    <li><a href="submissions.html">2023 Submissions</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button id="theme-btn">Dark Mode</button>
+        </div>
+    </header>
+      <main>
+        <div>
+          <h1 class="dark-mode-text">2023 SUBMISSIONS</h1>
+          <div id="submissions-container">
+          </div>
+        </div>
+        
+        <form>
+          <h2>SUBMIT YOUR WORK</h2>
+          <p id="confirm"></p>
+          <input type="text" id="name" aria-label="Full Name Input" placeholder="Full Name" required>
+          <input type="text" id="entry-title" aria-label="Entry Title Input" placeholder="Entry Title" required>
+          <input type="file" accept=".jpg, .jpeg, .png" aria-label="upload first photo" id="photo-one" required>
+          <input type="file" accept=".jpg, .jpeg, .png" aria-label="upload second photo">
+          <input type="file" accept=".jpg, .jpeg, .png" aria-label="upload third photo">
+          <input type="file" accept=".jpg, .jpeg, .png" aria-label="upload fourth photo">
+          <input type="file" accept=".jpg, .jpeg, .png" aria-label="upload fifth photo">
+          <button id="submit-btn">SUBMIT</button>
+        </form>
+      </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

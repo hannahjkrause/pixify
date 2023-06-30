@@ -1,0 +1,73 @@
+:root {
+    /* COLORS */
+    --accent-color: #7BFFE9;
+    --main-color-and-darkmode: #2A3B49;
+
+
+
+    /* TYPOGRAPHY */
+    --h1-h2-font-size: 36px;
+    --font-size-standard-paragraph: 16px;
+    --font-size-large-paragraph: 20px;
+    --font-size-small: 14px;
+
+    /* OTHER */
+    --page-padding-left-right: 30px;
+
+    /* OTHER */
+    --button-border-radius: 60px;
+    --img-border-radius: 8px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "top top"
+    "left right";
+    gap: 15px;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-top {
+    grid-area: top;
+}
+
+.content-left {
+    grid-area: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ---- PSUEDO BUTTON STYLING ---- */
+.submit-link  {
+    border-radius: var(--button-border-radius);
+    border: solid 1px var(--accent-color);
+    background-color: var(--main-color-and-darkmode);
+    color: var(--accent-color);
+    font-size: 30px;
+    padding: 15px 30px;
+    align-self: flex-start;
+}
+
+.content-right {
+    grid-area: right;
+}
+
+img {
+    border-radius: 8px;
+    max-height: 600px;
+    margin: 10px;
+
+}
+

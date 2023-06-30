@@ -1,0 +1,55 @@
+
+:root {
+    /* COLORS */
+    --accent-color: #7BFFE9;
+    --main-color-and-darkmode: #2A3B49;
+
+
+
+    /* TYPOGRAPHY */
+    --h1-h2-font-size: 36px;
+    --font-size-standard-paragraph: 16px;
+    --font-size-large-paragraph: 20px;
+    --font-size-small: 14px;
+
+    /* OTHER */
+    --page-padding-left-right: 30px;
+
+    /* OTHER */
+    --button-border-radius: 60px;
+    --img-border-radius: 8px;
+
+}
+body {
+    background-image: url('../assets/homepage.jpg');
+    background-size: cover;
+}
+
+main div {
+    background-color: var(--main-color-and-darkmode);
+    border-radius: 150px 150px 150px 0px;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+main p {
+    color: #FFFFFF;
+    padding: 7%;
+    font-size: var(--font-size-large-paragraph);
+}
+
+/* --- PSUEDO BUTTON STYLING --- */
+.submit-link  {
+    border-radius: var(--button-border-radius);
+    border: solid 1px var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px 30px;
+}

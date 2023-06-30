@@ -1,0 +1,103 @@
+:root {
+    /* COLORS */
+    --accent-color: #7BFFE9;
+    --main-color-and-darkmode: #2A3B49;
+
+
+
+    /* TYPOGRAPHY */
+    --h1-h2-font-size: 36px;
+    --font-size-standard-paragraph: 16px;
+    --font-size-large-paragraph: 20px;
+    --font-size-small: 14px;
+
+    /* SPACING */
+    --page-padding-left-right: 30px;
+    --flex-grid-gap: 20px;
+
+    /* OTHER */
+    --button-border-radius: 60px;
+    --img-border-radius: 8px;
+    
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--flex-grid-gap);
+    margin-top: 40px;
+}
+
+main div {
+    flex-basis: 60%;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+#submissions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--flex-grid-gap);
+}
+
+/* PHOTO CARDS STYLING */
+.entry-container {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.entry-container img {
+    border-radius: 8px;
+}
+.image-caption {
+    display: flex;
+    justify-content: space-between;
+}
+.image-caption a {
+    font-size: 12px;
+}
+
+/* FORM STYLING  */
+
+form {
+    background-color: var(--main-color-and-darkmode);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    align-self: flex-start;
+    flex-grow: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+}
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+input[type="file"] {
+    cursor: pointer;
+}
+form button {
+    border-radius: var(--button-border-radius);
+    border: solid 1px var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    align-self: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}

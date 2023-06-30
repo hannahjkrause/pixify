@@ -1,0 +1,115 @@
+:root {
+    /* COLORS */
+    --accent-color: #7BFFE9;
+    --main-color-and-darkmode: #2A3B49;
+
+
+
+    /* TYPOGRAPHY */
+    --h1-h2-font-size: 36px;
+    --font-size-standard-paragraph: 16px;
+    --font-size-large-paragraph: 20px;
+    --font-size-small: 14px;
+
+    /* OTHER */
+    --page-padding-left-right: 30px;
+
+    /* OTHER */
+    --button-border-radius: 60px;
+    --img-border-radius: 8px;
+
+}
+/* ------- RESET STYLING --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* REMOVE LINK STYLING */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* MEDIA DEFAULTS FIX */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*REMOVE BUILT-IN FORM STYLLING FOR TEXT */
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+
+/* -------- HEADER STYLING ---------*/
+
+header {
+    background-color: var(--main-color-and-darkmode);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.company-logo {
+    font-size: var(--h1-h2-font-size);
+    font-weight: 500;
+    color: var(--accent-color);
+    padding-left: var(--page-padding-left-right);
+}
+.company-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    padding-right: var(--page-padding-left-right);
+    align-self: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav a {
+    color: #FFFFFF;
+    font-size: var(--font-size-standard-paragraph);
+}
+/* header styling with "dark mode" button */
+.header-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: var(--page-padding-left-right);
+}
+#theme-btn {
+    border: none;
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: transparent;
+}
+
+/* ------ THEME TOGGLE STYLING ------  */
+.white-text {
+    color: #FFFFFF;
+}
+
+
+
